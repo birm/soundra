@@ -1,2 +1,2 @@
 # soundra
-social mutitrack recorder (alpha)
+Social Sounds (early early alpha)

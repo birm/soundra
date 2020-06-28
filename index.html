@@ -1,7 +1,29 @@
-<html>
-<script src="js/events.js"></script>
-<script src="js/track.js"></script>
-<script src="js/storage.js"></script>
-<script src="js/soundra.js"></script>
+<!DOCTYPE html>
 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Soundra</title>
+  <script src="./js/recorder.min.js"></script>
+  <script src="./js/Tone.js"></script>
+  <style type='text/css'>
+    ul { list-style: none; }
+    li { margin: 1em; }
+    audio { display: block; }
+  </style>
+</head>
+<body>
+
+  <h1>Soundra: Social Sounds</h1>
+  <p>Pitch Shift Demo</p>
+
+  <button id="init">Enable Microphone</button>
+  <button id="start" disabled>start recording</button>
+  <button id="stopButton" disabled>stop recording</button>
+  <button onclick="document.getElementById('file-input').click();" id="fromfile">from file</button>
+  <input id="file-input" type="file" name="name" style="display: none;" />
+  <button id="shutdown">Stop Sounds</button>
+
+  <script src="./src.js"></script>
+</body>
 </html>
